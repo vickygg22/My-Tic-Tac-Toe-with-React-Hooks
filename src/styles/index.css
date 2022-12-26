@@ -43,3 +43,37 @@ h3{
 .wpInput1::placeholder, .wpInput2::placeholder{
     font-size: 14px;
 }
+.board-grid{
+    justify-content: center;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 8rem);
+    grid-template-rows: repeat(3, 8rem);
+    font-size: 50px;
+}
+.board-grid > button{
+    background-color: rgb(156, 116, 116);
+    border: 1px solid ;
+    color: rgba(236, 236, 236, 0.582);
+    box-sizing: border-box;
+}
+.btnBorder1, .btnBorder2, .btnBorder3{
+    border-top: none !important;
+}
+.btnBorder1, .btnBorder4, .btnBorder7{
+    border-left: none !important;
+}
+.btnBorder3, .btnBorder6, .btnBorder9{
+    border-right: none !important;
+}
+.btnBorder7, .btnBorder8, .btnBorder9{
+    border-bottom: none !important;
+}
+.startOver{
+    border: 2px solid rgb(92, 92, 92);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.startOver:hover{
+    background-color: rgb(206, 204, 204);
+}

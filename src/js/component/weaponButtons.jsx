@@ -1,10 +1,10 @@
 import React from "react";
 
-const WeaponButtons = () => {
+const WeaponButtons = ({handleWeaponClick}) => {
     return (
         <div className="weaponbuttons">
-            <button className="wpbtn1">X</button>
-            <button className="wpbtn2">O</button>
+            <button className="wpbtn1" onClick={handleWeaponClick}>X</button>
+            <button className="wpbtn2" onClick={handleWeaponClick}>O</button>
         </div>
     )
 }
