@@ -1,12 +1,45 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@700&family=Roboto&display=swap');
+body {
+    background-color: rgb(156, 116, 116);
+    font-family: 'Andika', sans-serif;
+    color: azure;
+}
+h3{
+    margin-top: 20px;
+}
+.weaponMainDiv{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(128, 71, 71);
+    margin: 100px auto;
+}
+.weaponMainDiv > h5{
+    padding-top: 50px;
+}
+.weaponbuttons{
+    padding: 20px;
+}
+.wpbtn1, .wpbtn2 {
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(78, 52, 52);
+    border: none;
+}
+.wpbtn1{
+    color: rgb(243, 243, 95);
+}
+.wpbtn2{
+    margin-left: 50px;
+    color: rgb(114, 114, 231);
+}
+.wpbtn1:hover, .wpbtn2:hover{
+    background-color: rgb(117, 87, 87);
+}
+.wpInput1, .wpInput2{
+    width: 200px;
+    margin: 5px;
+}
+.wpInput1::placeholder, .wpInput2::placeholder{
+    font-size: 14px;
+}
