@@ -1,22 +1,26 @@
 import React from "react";
 import StartOverButton from "./startOverButton.jsx";
+import Square from "./square.jsx";
 
-const GameBoard = ({player, handlePlayersTurn}) => {
-    
+const GameBoard = ({player, handlePlayersTurn, setTurn, turn, chooseSquare}) => {
+    const bothHandleTurns = () => {
+        handlePlayersTurn();
+        handleBoardTurn();
+    }
     return (
        <div className="boardMainDiv">
         <h3>It is {player} turn!</h3>
         <StartOverButton />
         <div className="board-grid">
-            <button className="btnBorder1" onClick={handlePlayersTurn}>X</button>
-            <button className="btnBorder2" onClick={handlePlayersTurn}>X</button>
-            <button className="btnBorder3" onClick={handlePlayersTurn}>X</button>
-            <button className="btnBorder4" onClick={handlePlayersTurn}>X</button>
-            <button className="btnBorder5" onClick={handlePlayersTurn}>X</button>
-            <button className="btnBorder6" onClick={handlePlayersTurn}>X</button>
-            <button className="btnBorder7" onClick={handlePlayersTurn}>X</button>
-            <button className="btnBorder8" onClick={handlePlayersTurn}>X</button>
-            <button className="btnBorder9" onClick={handlePlayersTurn}>X</button>
+            <Square value={turn[0]} chooseSquare={() => {chooseSquare(0)}}/>
+            <Square value={turn[1]} chooseSquare={() => {chooseSquare(1)}}/>
+            <Square value={turn[2]} chooseSquare={() => {chooseSquare(2)}}/>
+            <Square value={turn[3]} chooseSquare={() => {chooseSquare(3)}}/>
+            <Square value={turn[4]} chooseSquare={() => {chooseSquare(4)}}/>
+            <Square value={turn[5]} chooseSquare={() => {chooseSquare(5)}}/>
+            <Square value={turn[6]} chooseSquare={() => {chooseSquare(6)}}/>
+            <Square value={turn[7]} chooseSquare={() => {chooseSquare(7)}}/>
+            <Square value={turn[8]} chooseSquare={() => {chooseSquare(8)}}/>
         </div>
        </div>
     )

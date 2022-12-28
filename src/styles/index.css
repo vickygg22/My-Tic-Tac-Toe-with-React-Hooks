@@ -50,24 +50,18 @@ h3{
     grid-template-columns: repeat(3, 8rem);
     grid-template-rows: repeat(3, 8rem);
     font-size: 50px;
+    
 }
-.board-grid > button{
+.square{
     background-color: rgb(156, 116, 116);
-    border: 1px solid ;
+    border: 1px solid;
+    padding-top: 25px;
     color: rgba(236, 236, 236, 0.582);
     box-sizing: border-box;
+    cursor: pointer;
 }
-.btnBorder1, .btnBorder2, .btnBorder3{
-    border-top: none !important;
-}
-.btnBorder1, .btnBorder4, .btnBorder7{
-    border-left: none !important;
-}
-.btnBorder3, .btnBorder6, .btnBorder9{
-    border-right: none !important;
-}
-.btnBorder7, .btnBorder8, .btnBorder9{
-    border-bottom: none !important;
+.square:active{
+    background-color: rgb(136, 94, 94)
 }
 .startOver{
     border: 2px solid rgb(92, 92, 92);
@@ -76,4 +70,17 @@ h3{
 }
 .startOver:hover{
     background-color: rgb(206, 204, 204);
+}
+.squares{
+    background: #272727;
+    border: none;
+    font-size: 5rem;
+    cursor: pointer;
+    outline: none;
+}
+.x {
+    color: red;
+}
+.o{
+    color: green;
 }
