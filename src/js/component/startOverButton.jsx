@@ -1,8 +1,8 @@
 import React from "react";
 
-const StartOverButton = () => {
+const StartOverButton = ({HandleResetGame}) => {
     return (
-        <button className="startOver">Start Over</button>
+        <button className="startOver" onClick={HandleResetGame}>Start Over</button>
     )
 }
 export default StartOverButton;
